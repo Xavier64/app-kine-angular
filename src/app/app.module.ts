@@ -7,8 +7,6 @@ import interactionPlugin from '@fullcalendar/interaction';
 import scrollgridPlugin from '@fullcalendar/scrollgrid';
 
 
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -37,7 +35,9 @@ import { BgProfilComponent } from './pages/profil/bg-profil/bg-profil.component'
 import { ProfilPatientComponent } from './pages/profil/profil-patient/profil-patient.component';
 import { BilanComponent } from './pages/profil/bilan/bilan.component';
 import { HelloComponent } from './pages/home/hello/hello.component';
-import { AccordionComponent } from './accordion/accordion.component';
+import { AccordionComponent } from './components/accordion/accordion.component';
+import { BgContactComponent } from './pages/contact/bg-contact/bg-contact.component';
+
 
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
@@ -76,9 +76,10 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     HelloComponent,
     BilanComponent,
     AccordionComponent,
+    BgContactComponent,
 
-   
-  
+
+
   ],
   imports: [
     BrowserModule,
