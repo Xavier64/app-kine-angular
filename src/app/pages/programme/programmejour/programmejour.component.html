@@ -1,0 +1,31 @@
+<div class="bloc">
+  <div class="top">
+    <div class="titre">
+      <h1>Programme du jour:</h1>
+      <p>"Titre du programme du jour"</p>
+    </div>
+
+    <div class="musique">
+      <p>Musique</p>
+      <button> 
+       <img src="assets/img/play.png" alt="">
+      </button>
+    </div>
+  </div>
+
+  <div class="contenu">
+    <button><img src="assets/img/btn_left.png" alt="" /></button>
+    <div class="videos">
+    <div class="video"  *ngFor="let exercice of exercices">
+      <div class="img">
+        <img src="assets/img/exercices/{{ exercice.image }}" />
+      </div>
+      <div class="nom">
+        <div >{{ exercice.nom }}</div>
+      </div>
+    </div>
+    </div>
+
+    <button><img src="assets/img/btn_right.png" alt="" /></button>
+  </div>
+</div>
