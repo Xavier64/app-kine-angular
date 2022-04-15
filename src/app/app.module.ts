@@ -5,8 +5,6 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timegridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import scrollgridPlugin from '@fullcalendar/scrollgrid';
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -27,7 +25,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { BgProgrammeComponent } from './pages/programme/bg-programme/bg-programme.component';
 import { BgHomeComponent } from './pages/home/bg-home/bg-home.component';
 import { ChangerProgrammeComponent } from './pages/programme/changer-programme/changer-programme.component';
-import { AvisExercicesComponent } from './pages/programme/avis-exercices/avis-exercices.component';
 import { BgExercicesComponent } from './pages/exercices/bg-exercices/bg-exercices.component';
 import { ListeExercicesComponent } from './pages/exercices/liste-exercices/liste-exercices.component';
 import { TriComponent } from './pages/exercices/tri/tri.component';
@@ -37,6 +34,7 @@ import { BilanComponent } from './pages/profil/bilan/bilan.component';
 import { HelloComponent } from './pages/home/hello/hello.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { BgContactComponent } from './pages/contact/bg-contact/bg-contact.component';
+import { ChangerEtAvisComponent } from './pages/programme/changer-et-avis/changer-et-avis.component';
 
 
 
@@ -67,7 +65,6 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     BgProgrammeComponent,
     BgHomeComponent,
     ChangerProgrammeComponent,
-    AvisExercicesComponent,
     BgExercicesComponent,
     ListeExercicesComponent,
     TriComponent,
@@ -77,10 +74,10 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     BilanComponent,
     AccordionComponent,
     BgContactComponent,
-
-
-
+    ChangerEtAvisComponent,
   ],
+
+
   imports: [
     BrowserModule,
     AppRoutingModule,

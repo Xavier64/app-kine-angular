@@ -1,6 +1,6 @@
-
-
 .background{
+    display: flex;
+    flex-direction: column;
     background-color: #E2E2E2;
     border-radius: 25px;
     margin: 2%;
@@ -26,10 +26,14 @@
             a{
                 margin-right: 3%;
             }
-
+          }
         }
-    }
+        .bilan-patient{
 
-    
+          display: grid;
+          grid-template-columns: 70% 30%;
+          height: 100%;
+
+            }
 }
 

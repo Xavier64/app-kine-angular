@@ -44,8 +44,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0.5vw;
-    grid-row-gap: 4vw;
+    grid-row-gap: 3vw;
     justify-items: center;
+    height: 80%;
 
     .blockparam {
       display: flex;
@@ -56,8 +57,9 @@
       filter: drop-shadow(6px 12px 14px rgba(0, 0, 0, 0.25));
       border-radius: 25px;
       width: 50%;
+      height: 100%;
       gap: 1vw;
-      height: 11vw;
+
 
       &:hover {
         transform: scale(1.1);

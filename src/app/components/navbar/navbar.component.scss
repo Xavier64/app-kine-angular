@@ -21,11 +21,11 @@ nav {
         align-items: center;
         border-radius:0px 25px 0px 0px;
 
-       
+
     }
 
-    .navbar { 
-        height: 100%;
+    .navbar {
+        height:100%;
         width: 100%;
         background-color: $color_grey;
         align-items: center;
@@ -35,7 +35,7 @@ nav {
         gap: 1vw;
         border-radius:0px 0px 25px 0px;
 
-       
+
     }
 
     ul {
@@ -55,11 +55,10 @@ nav {
             justify-content: center;
             align-items: center;
 
-            
+
             &:hover{
                 background-color: #998e8c;
             }
-            
 
             }
 
@@ -79,10 +78,10 @@ nav {
         //     flex-direction: column;
         //     align-items: flex-start;
         //     height: 100%;
-        
-        
-        
-        
+
+
+
+
         //     .logo {
         //         display: flex;
         //         align-items: center;
@@ -91,26 +90,26 @@ nav {
         //         background-color: #FFFFFF;
         //         height: 20%;
         //         width: 8%;
-        
-        
+
+
         //         li{
         //             display: flex;
-        
+
         //             a{
         //                 display: flex;
         //                 flex-direction: column;
         //                 align-items: center;
-        
+
         //                 img{
         //                     width: 6vw;
         //                 }
-        
+
         //             }
-        
+
         //         }
         //     }
-        
-        //     .navbar { 
+
+        //     .navbar {
         //         display: flex;
         //         flex-direction: column;
         //         background-color: $color_grey;
@@ -120,30 +119,30 @@ nav {
         //         height: 100%;
         //         width: 8%;
         //         border-radius:0px 0px 25px 0px;
-        
+
         //     }
-        
+
         //     ul {
         //         list-style-type:none;
         //         display: flex;
         //         flex-direction: column;
         //         align-items: center;
         //         gap: 3.5vw;
-        
-        
+
+
         //         li{
         //             display: flex;
         //             align-items: center;
-        
+
         //             a{
-        
+
         //                 img{
         //                     width: 3vw;
         //                 }
-        
+
         //             }
-        
+
         //         }
-        
+
         //     }
         //}
