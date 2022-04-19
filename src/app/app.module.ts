@@ -37,6 +37,8 @@ import { BgContactComponent } from './pages/contact/bg-contact/bg-contact.compon
 import { ChangerEtAvisComponent } from './pages/programme/changer-et-avis/changer-et-avis.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { NgImageSliderModule } from 'ng-image-slider';
+import { CarrousselComponent } from './pages/programme/carroussel/carroussel.component';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -76,6 +78,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     BgContactComponent,
     ChangerEtAvisComponent,
     ProgressBarComponent,
+    CarrousselComponent,
 
   ],
 
@@ -87,6 +90,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     HttpClientModule,
     FullCalendarModule,
     MatProgressBarModule,
+    NgImageSliderModule,
 
   ],
   providers: [],

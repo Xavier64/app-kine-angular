@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BgProgrammeComponent implements OnInit {
 
-  constructor() { }
+  title!:string;
+  notification!:string;
+  don!:string;
 
   ngOnInit(): void {
+    this.title = "Programme";
+    this.notification="/assets/img/bell.png";
+    this.don="/assets/img/donations.png";
   }
   linkNotifications= "notifications"
   linkContact = "contact"
