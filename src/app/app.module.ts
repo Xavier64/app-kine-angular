@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import dayGridPlugin from '@fullcalendar/daygrid';
@@ -35,8 +35,8 @@ import { HelloComponent } from './pages/home/hello/hello.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { BgContactComponent } from './pages/contact/bg-contact/bg-contact.component';
 import { ChangerEtAvisComponent } from './pages/programme/changer-et-avis/changer-et-avis.component';
-
-
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -75,6 +75,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     AccordionComponent,
     BgContactComponent,
     ChangerEtAvisComponent,
+    ProgressBarComponent,
+
   ],
 
 
@@ -84,9 +86,11 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     BrowserAnimationsModule,
     HttpClientModule,
     FullCalendarModule,
+    MatProgressBarModule,
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }
