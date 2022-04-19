@@ -10,6 +10,7 @@ export class BgHomeComponent implements OnInit {
   title!:string;
   notification!:string;
   don!:string;
+
   ngOnInit(): void {
 
     this.title = "Accueil";

@@ -6,11 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profil-patient.component.scss']
 })
 export class ProfilPatientComponent implements OnInit {
-  
-  constructor() { }
-  
+
+
+   nom!:string;
+   prenom!:string;
+   naissance!:string;
+   kine!:string;
+   humeur!:string;
+
   ngOnInit(): void {
+    this.nom ="Charles";
+    this.prenom="Bouveret"
+    this.naissance = "28 Novembre 1995";
+    this.kine = "Marin Poloni";
+    this.humeur = "/assets/img/smiley.png";
   }
-  
-  
+
+
 }
