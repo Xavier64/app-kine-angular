@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,10 +10,17 @@ export class LoginComponent implements OnInit {
 
   logo!:string;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.logo = "../assets/img/logologin.png";
   }
 
+  onLogin(): void {
+    this.router.navigateByUrl('/home')
+  }
+
+  toInscription():void {
+    this.router.navigateByUrl('/inscription');
+  }
 }
