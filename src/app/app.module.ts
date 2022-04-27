@@ -39,6 +39,7 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { CarrousselComponent } from './pages/programme/carroussel/carroussel.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -91,6 +92,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FullCalendarModule,
     MatProgressBarModule,
     NgImageSliderModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
